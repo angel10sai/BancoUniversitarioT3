@@ -1,0 +1,180 @@
+/* Cargar fuente local */
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../../font/MontserratAlternates-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos básicos */
+* {
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    box-sizing: border-box; /* Tamaño total incluye bordes */
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Montserrat Alternates', sans-serif; /* Fuente local */
+    line-height: 1.6; /* Espacio entre líneas */
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #085f63; /* Color texto principal */
+}
+
+/* Encabezado */
+header {
+    background-color: #085f63; /* Fondo principal */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 1rem; /* Relleno */
+    display: flex; /* Alineación flexible */
+    justify-content: space-between; /* Logo izq, nav der */
+    align-items: center; /* Centrar vertical */
+}
+
+/* Contenedor del logo */
+.logo-container {
+    flex-shrink: 0; /* Evitar deformación */
+}
+
+/* Logo */
+.logo {
+    width: 150px; /* Tamaño fijo */
+    height: auto; /* Proporción */
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 5px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Navegación */
+nav {
+    display: flex; /* Alineación flexible */
+    align-items: center; /* Centrar vertical */
+    gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Enlaces de navegación */
+nav a {
+    color: #FFFFFF; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Cambio suave de color */
+}
+
+/* Hover en enlaces */
+nav a:hover {
+    color: #49beb7; /* Color secundario */
+}
+
+/* Botón Banca en Línea */
+.btn {
+    background-color: #49beb7; /* Fondo secundario */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 0.5rem 1rem; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Cambio suave */
+}
+
+/* Hover en botón */
+.btn:hover {
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #085f63; /* Texto principal */
+}
+
+/* Sección con imagen de fondo */
+.hero {
+    background-image: url('../../assets/img/background.jpeg'); /* Imagen fondo */
+    background-size: cover; /* Cubrir área */
+    background-position: center; /* Centrar imagen */
+    height: 400px; /* Altura fija */
+    display: flex; /* Alineación flexible */
+    align-items: center; /* Centrar vertical */
+    justify-content: center; /* Centrar horizontal */
+    text-align: center; /* Texto centrado */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+/* Texto en hero */
+.hero-text {
+    background-color: rgba(8, 95, 99, 0.7); /* Fondo semitransparente */
+    padding: 2rem; /* Relleno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Secciones */
+section {
+    padding: 2rem; /* Relleno */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+}
+
+/* Títulos de sección */
+h2 {
+    color: #085f63; /* Color principal */
+    margin-bottom: 1rem; /* Espacio abajo */
+}
+
+/* Lista */
+ul {
+    list-style-type: none; /* Sin viñetas */
+}
+
+/* Ítems de lista */
+li {
+    margin: 0.5rem 0; /* Espacio vertical */
+    padding-left: 1rem; /* Espacio viñeta */
+    position: relative; /* Posición viñeta */
+}
+
+/* Viñeta personalizada */
+li:before {
+    content: "•"; /* Punto como viñeta */
+    color: #49beb7; /* Color secundario */
+    position: absolute; /* Posición absoluta */
+    left: 0; /* Alineado izq */
+}
+
+/* Pie de página */
+footer {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    text-align: center; /* Texto centrado */
+    padding: 1rem; /* Relleno */
+    position: fixed; /* Fijo abajo */
+    bottom: 0; /* Pegado al fondo */
+    width: 100%; /* Ancho completo */
+    color: #085f63; /* Color texto principal */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+    /* Encabezado en columna */
+    header {
+        flex-direction: column; /* Apilar elementos */
+        padding: 0.5rem; /* Menos relleno */
+    }
+
+    /* Navegación en columna */
+    nav {
+        flex-direction: column; /* Apilar enlaces */
+        text-align: center; /* Texto centrado */
+    }
+
+    /* Enlaces verticales */
+    nav a {
+        margin: 0.5rem 0; /* Espacio vertical */
+    }
+
+    /* Menor altura hero */
+    .hero {
+        height: 300px; /* Altura reducida */
+    }
+
+    /* Menos relleno en hero-text */
+    .hero-text {
+        padding: 1rem; /* Relleno reducido */
+    }
+
+    /* Menos relleno en secciones */
+    section {
+        padding: 1rem; /* Relleno reducido */
+    }
+}
