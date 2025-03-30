@@ -20,6 +20,10 @@ body {
     color: #085f63;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* -------- ENCABEZADO ------------ */
 
 .header{
