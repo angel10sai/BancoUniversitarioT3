@@ -394,6 +394,29 @@ h2 {
 /* -------- FIN DE LA SECCIÓN DE CONTACTO ------------ */
 
 /* -------- FOOTER DE PÁGINA ------------ */
+.media-icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.media-icons-container a{
+    font-size: 200%;
+    transition: color 0.3s;
+}
+.instagram{
+    color: #ffffff;
+}
+.xtwitter{
+    color: #ffffff;
+}
+.facebook{
+    color: #ffffff;
+}
+.media-icons-container a:hover {
+    color: #49beb7;
+}
 footer {
     background-color: #f4f4f4;
     text-align: center;
