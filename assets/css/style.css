@@ -267,20 +267,12 @@ h2 {
 }
 
 .about-text{
-    display: none;
+    display: flex;
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-.about-item__box:hover .about-text {
-    display: flex;
-    text-align: center;
-}
-
-.about-item__box:hover .about-item__tittle {
-    display: none;
-}
 
 /* -------- SOBRE NOSOTROS RESPONSIVE QUERIES ------------ */
 /* -------- LLEVANDO LA PÁGINA A DESKTOP ------------ */
