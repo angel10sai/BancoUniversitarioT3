@@ -245,7 +245,7 @@ h2 {
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 12rem;
+    min-height: 12rem;
     background-image: linear-gradient(#0009, #0009), url('../../assets/img/about-vision.jpg');
     background-size: cover;
     background-position: center;
