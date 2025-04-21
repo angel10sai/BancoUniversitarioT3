@@ -27,7 +27,8 @@ html {
 }
 
 /* -------- ENCABEZADO ------------ */
-.header {
+
+.header{
     container-type: inline-size;
     container-name: header;
 }
@@ -46,7 +47,7 @@ html {
 }
 
 /* Oculta el checkbox para el menú hamburguesa */
-.header__checkbox {
+.header__checkbox{
     display: none;
 }
 
@@ -58,14 +59,14 @@ html {
 }
 
 /* Muestra el menú cuando el checkbox está activado */
-.header__checkbox:checked ~ .header__nav {
+.header__checkbox:checked ~ .header__nav{
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
 /* Estilo del botón para abrir el menú */
-.header__open-nav-button {
+.header__open-nav-button{
     font-size: 3rem;
     color: #D9D9D9;
     font-weight: 600;
@@ -125,7 +126,8 @@ nav a:hover {
         text-align: center;
         gap: 2rem;
     }
-    .header__open-nav-button {
+
+    .header__open-nav-button{
         display: none;
     }
 }
@@ -156,14 +158,28 @@ nav a:hover {
 }
 
 /* Oculta el h1 por defecto */
-h1 {
+h1{
     display: none;
 }
 
+.hero__logo-container{
+    flex-shrink: 0;
+}
+
 /* Estilo del logo en la sección hero */
-.hero__logo {
+.hero__logo{
     width: 100%;
     height: auto;
+}
+
+.hero-text{
+    padding: 15px;
+}
+
+.hero-text__description {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Media queries para la sección hero en desktop */
@@ -171,15 +187,18 @@ h1 {
     .hero {
         height: 100vh;
     }
+
     .hero-container {
         padding: 2rem;
         margin: 0;
         gap: 5px;
     }
+
     .hero-text__description {
         font-size: 1.5rem;
     }
-    .hero-text__bottomdescription {
+
+    .hero-text__bottomdescription{
         font-size: 1.2rem;
     }
 }
@@ -198,7 +217,7 @@ h2 {
 }
 
 /* -------- SECCIÓN SOBRE NOSOTROS ------------ */
-.about {
+.about{
     width: 100%;
     background: #085f63;
     padding: 2rem;
@@ -210,27 +229,83 @@ h2 {
     gap: 1rem;
 }
 
+.about-items__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-items{
+    width: 100%;
+}
+
+.about-item__tittle{
+    color: #ffffff;
+}
+
+.about-item__box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 12rem;
+    background-image: linear-gradient(#0009, #0009), url('../../assets/img/about-vision.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.about-item__box--mision{
+    background-image: linear-gradient(#0009, #0009), url('../../assets/img/about-mission.jpg');
+}
+
+.about-item__box--objetivos{
+    background-image: linear-gradient(#0009, #0009), url('../../assets/img/about-objectives.jpg');
+}
+
+.about-tittle{
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-text{
+    display: flex;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 /* Media queries para la sección "Sobre nosotros" en desktop */
 @container about (min-width: 700px) {
-    .about {
+    .about{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    .about-items__container {
+
+    .about-items__container{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
     }
-    .about-items {
+
+    .about-items{
         width: 30%;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
     }
 }
 
 /* -------- SECCIÓN DE SERVICIOS ------------ */
-.services {
+.services{
     container-type: inline-size;
     container-name: services;
 }
@@ -243,18 +318,55 @@ h2 {
     justify-content: center;
 }
 
+.services-tittle{
+    text-align: center;
+}
+
+.services-card {
+    background-color: #085f63;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    color: #085f63;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.services-card__tittle-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.services-card:hover {
+    transform: translateY(-5px);
+}
+
 /* Media queries para la sección de servicios en desktop */
 @container services (min-width: 700px) {
     .services-container {
         flex-direction: row;
     }
+
     .services-card {
         width: 30%;
     }
 }
 
 /* -------- SECCIÓN DE CONTACTO ------------ */
-.contact {
+.contact{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -265,11 +377,45 @@ h2 {
     text-align: center;
 }
 
-/* -------- FOOTER DE PÁGINA ------------ */
-footer {
-    background-color: #085f63;
+.contact-title{
     color: #ffffff;
+}
+
+/* -------- FOOTER DE PÁGINA ------------ */
+.media-icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.media-icons-container a{
+    font-size: 200%;
+    transition: color 0.3s;
+}
+
+.instagram{
+    color: #ffffff;
+}
+
+.xtwitter{
+    color: #ffffff;
+}
+
+.facebook{
+    color: #ffffff;
+}
+
+.media-icons-container a:hover {
+    color: #49beb7;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #f4f4f4;
     text-align: center;
     padding: 1rem;
+    bottom: 0;
     width: 100%;
+    background: #085f63;
+    color: #ffffff;
 }
