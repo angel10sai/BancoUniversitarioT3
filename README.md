@@ -1,39 +1,12 @@
-# BancoUniversitarioT3
+# React + Vite
 
-Banco Universitario - Sitio Web Institucional y Banca en Línea
-Descripción del Proyecto
-Este proyecto, desarrollado por un equipo de ingenieros de la Universidad Centroccidental "Lisandro Alvarado" (UCLA), tiene como objetivo crear una plataforma web completa para el Banco Universitario, una institución que lleva cinco años apoyando a estudiantes universitarios en Venezuela con soluciones financieras accesibles. La plataforma consta de dos componentes principales:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Sitio Web Institucional: Un espacio estático que presenta la identidad del banco, incluyendo su misión, visión, objetivos, servicios y datos de contacto. Es responsive y refleja los colores y logo oficiales del banco.
-Banca en Línea: Una aplicación web que permite a los usuarios registrados gestionar sus finanzas (saldo, transferencias, contactos frecuentes, cambio de contraseña) mediante una API REST proporcionada por el banco.
+Currently, two official plugins are available:
 
-Branding
-Colores Oficiales
-Primario: #085f63 (RGB: 8, 95, 99)
-Secundario/Acentuado: #49beb7 (RGB: 73, 190, 183)
-Fondo: #FFFFFF (RGB: 255, 255, 255)
-Tipografía
-Primaria: Montserrat Alternates Regular 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Requisitos del Sitio Web Institucional
-Contenido:
-Página de inicio con información general.
-Sección "Misión, Visión y Objetivos".
-Lista de servicios (transferencias sin costo, depósitos, retiros, pago de matrículas, cobro de becas).
-Información de contacto (dirección, teléfono, correo, redes sociales).
-Enlace a la banca en línea.
-Diseño:
-Responsive para móviles, tabletas y computadoras.
-Uso de colores, logo y tipografía oficiales.
-Estático (sin consumo de API en esta fase).
+## Expanding the ESLint configuration
 
-Tecnologías Utilizadas
-Frontend:
-HTML: Estructura del sitio.
-CSS: Estilos y diseño responsive.
-JavaScript: Base para futuras interacciones (actualmente sin uso).
-Control de Versiones:
-Git: Gestión local de versiones.
-GitHub: Repositorio remoto y colaboración.
-Herramientas:
-Visual Studio Code: Entorno de desarrollo.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
