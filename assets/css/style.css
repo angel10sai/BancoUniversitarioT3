@@ -279,6 +279,10 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.about-items:hover {
+    transform: translateY(-5px);
+}
+
 /* Media queries para la sección "Sobre nosotros" en desktop */
 @container about (min-width: 700px) {
     .about{
@@ -297,6 +301,7 @@ h2 {
 
     .about-items{
         width: 30%;
+        transition: transform 0.3s;
     }
 
     .about-text {
