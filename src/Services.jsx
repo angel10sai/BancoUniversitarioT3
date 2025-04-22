@@ -9,7 +9,7 @@ import servicesScholarship from './assets/img/services-scholarship.png';
 function Services() {
   return (
     <section className="services" id="services">
-      <h2 className="services-tittle">Servicios</h2>
+      <h2 className="services-tittle">Nuestros Servicios</h2>
       <div className="services-container">
         <div className="services-card">
           <div className="services-card__tittle-container">

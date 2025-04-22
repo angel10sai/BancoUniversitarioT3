@@ -4,6 +4,8 @@
     container-type: inline-size;
     container-name: header;
 }
+
+/* Contenedor principal del encabezado */
 .header__items {
     background-color: #085f63;
     color: #FFFFFF;
@@ -15,34 +17,34 @@
     align-items: center;
     width: 100%;
 }
-
+/* Oculta el checkbox para el menú hamburguesa */
 .header__checkbox{
     display: none;
 }
-
+/* Oculta el menú de navegación por defecto */
 .header__nav {
     display: none;
     align-items: center;
     gap: 1rem;
 }
-
+/* Muestra el menú cuando el checkbox está activado */
 .header__checkbox:checked ~ .header__nav{
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-
+/* Estilo del botón para abrir el menú */
 .header__open-nav-button{
     font-size: 3rem;
     color: #D9D9D9;
     font-weight: 600;
 }
-
+/* Contenedor del logo */
 .header__logo-container {
     flex-shrink: 0;
 }
-
+/* Estilo del logo */
 .header__logo {
     width: 150px;
     height: auto;
@@ -50,8 +52,7 @@
     padding: 5px;
     border-radius: 5px;
 }
-
-
+/* Estilo de los enlaces de navegación */
 nav a {
     color: #FFFFFF;
     text-decoration: none;
@@ -61,7 +62,7 @@ nav a {
 nav a:hover {
     color: #49beb7;
 }
-
+/* Estilo de botones genéricos */
 .btn {
     background-color: #49beb7;
     color: #FFFFFF;
@@ -76,8 +77,7 @@ nav a:hover {
     color: #085f63;
 }
 
-/* -------- HEADER RESPONSIVE QUERIES ------------ */
-/* -------- LLEVANDO LA PÁGINA A DESKTOP ------------ */
+/* Media queries para el encabezado en desktop */
 @container header (min-width: 700px) {
     .header__items {
         flex-direction: row;

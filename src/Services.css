@@ -4,7 +4,7 @@
     container-type: inline-size;
     container-name: services;
 }
-
+/* Contenedor de las tarjetas de servicios */
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -49,8 +49,7 @@
 }
 
 
-/* -------- SERVICIOS RESPONSIVE QUERIES ------------ */
-/* -------- LLEVANDO LA PÁGINA A DESKTOP ------------ */
+/* Media queries para la sección de servicios en desktop */
 @container services (min-width: 700px) {
     .services-container {
         flex-direction: row;

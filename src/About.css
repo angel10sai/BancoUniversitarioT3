@@ -33,7 +33,7 @@
     text-align: center;
     justify-content: center;
     width: 100%;
-    height: 12rem;
+    min-height: 12rem;
     background-image: linear-gradient(#0009, #0009), url('assets/img/about-vision.jpg');
     background-size: cover;
     background-position: center;
@@ -62,18 +62,11 @@
     margin-bottom: 1rem;
 }
 
-/*.about-item__box:hover .about-text {
-    display: flex;
-    text-align: center;
+.about-items:hover {
+    transform: translateY(-5px);
 }
 
-.about-item__box:hover .about-item__tittle {
-    display: none;
-}*/
-
-/* -------- SOBRE NOSOTROS RESPONSIVE QUERIES ------------ */
-/* -------- LLEVANDO LA PÁGINA A DESKTOP ------------ */
-
+/* Media queries para la sección "Sobre nosotros" en desktop */
 @container about (min-width: 700px) {
 
     .about{

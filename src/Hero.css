@@ -3,12 +3,12 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.61)), url('assets/img/background.jpeg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     container-type: inline-size;
     container-name: hero;
 }
-
+/* Contenedor principal de la sección hero */
 .hero-container {
     background-color: rgba(8, 95, 99, 0.7);
     padding: 2rem;
@@ -21,11 +21,11 @@
     color: #FFFFFF;
     gap: 1rem;
 }
-
+/* Oculta el h1 por defecto */
 h1{
     display: none;
 }
-
+/* Estilo del logo en la sección hero */
 .hero__logo-container{
     flex-shrink: 0;
 }
@@ -45,8 +45,7 @@ h1{
     margin-bottom: 1rem;
 }
 
-/* -------- HERO RESPONSIVE QUERIES ------------ */
-/* -------- LLEVANDO LA PÁGINA A DESKTOP ------------ */
+/* Media queries para la sección hero en desktop */
 
 @container hero (min-width: 700px) {
     .hero {

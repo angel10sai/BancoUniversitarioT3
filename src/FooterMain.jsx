@@ -5,13 +5,13 @@ function Footer() {
   return (
     <footer>
       <div class="media-icons-container">
-            <a href="#" class="instagram">
+            <a href="https://www.instagram.com/bancouniversitariove" class="instagram">
                 <i class="fa-brands fa-square-instagram"></i>
             </a>
-            <a href="#" class="xtwitter">
+            <a href="https://x.com/bancouniversitariove" class="xtwitter">
                 <i class="fa-brands fa-square-x-twitter"></i>
             </a>
-            <a href="#" class="facebook">
+            <a href="https://www.facebook.com/bancouniversitariove" class="facebook">
                 <i class="fa-brands fa-square-facebook"></i>
             </a>
         </div>
