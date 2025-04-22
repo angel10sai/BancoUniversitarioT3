@@ -21,6 +21,7 @@
 
 .about-items{
     width: 100%;
+    transition: transform 0.3s;
 }
 
 .about-item__tittle{
